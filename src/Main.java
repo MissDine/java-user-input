@@ -1,28 +1,43 @@
-import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
-//        Mad libs game
-Scanner scanner = new Scanner(System.in);
-        String adjective1;
-        String noun1;
-        String verb1;
-        String adjective2;
-        String adjective3;
-        System.out.println("Enter an adjective(description): ");
-        adjective1 = scanner.nextLine();
-        System.out.println("Enter a noun(Animal/person): ");
-        noun1 = scanner.nextLine();
-        System.out.println("Enter an adjective(description): ");
-        adjective2 = scanner.nextLine();
-        System.out.println("Enter an adjective(description): ");
-        verb1 = scanner.nextLine();
-        System.out.println("Enter a verb ending with ing(action) ");
-        adjective3 = scanner.nextLine();
-        System.out.println("Today I went to " + adjective1 + " zoo");
-        System.out.println("In an exhibit, I saw a " + noun1 + ".");
-        System.out.println(noun1 + " was " + adjective2 + " and " + verb1 + "!");
-        System.out.println("I was " + adjective3 + " !");
+//   Arithmetic-operators(+, -, *, /,)
 
-        scanner.close();
+int a = 10;
+int b = 3;
+int c;
+//Addition
+c = a + b;
+            System.out.println(c);
+//          Subtraction
+            int d = a - b;
+            System.out.println(d);
+
+//            Multiplication
+            int e = a * 3;
+            System.out.println(e);
+
+//            Division
+            int f = a / b;
+            System.out.println(f);
+//            Modullas
+            int g =  a % b;
+            System.out.println(g);
+
+//            Augmented assignment operators(condensing)
+//            instead of writing a = a +b; we write a +=b;
+
+//            Increment and Decrement Operators
+            int x = 1;
+//            Instead of writing x = x + 1; we write x++; so it is going to increment by one. The same can be applied in decrement.
+            x++;
+            x++;
+            x++;
+            System.out.println(x);
+
+//            ORDER OF OPERATIONS(P-E-M-D-A-S)
+            double results = 3 + 4 * (7-5)/2.0;
+            System.out.println(results);
+
+
     }
 }
